@@ -1,5 +1,10 @@
 /* global AdCollection, AdListView, AddRantView, RantCollection, RantListView, UserModel, UserView */
 
+if(!window.$){
+  console.error('jQuery failed to load');
+  document.body.innerHTML = "<h1>Sorry! Something terrible happened. Try again.</h1>"
+}
+
 $(function() {
   'use strict';
 
